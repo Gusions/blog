@@ -201,7 +201,19 @@ const writingList = () => `<ul class="writing">\n${posts.map(postItem).join('\n'
 const cardLink = (p) => `<li><a href="/${p.slug}"><strong>${esc(p.title)}</strong>${p.description ? ` <span class="desc">${esc(p.description)}</span>` : ''}</a></li>`;
 
 // ---------- output ----------
+// Link rule: internal links open in the same tab, external links in a new tab.
+const siteHost = new URL(cfg.url).hostname.replace(/^www\./, '');
+function externalLinks(html) {
+  return html.replace(/<a\s([^>]*?)href="(https?:\/\/[^"]+)"([^>]*)>/g, (m, pre, href, post) => {
+    let host;
+    try { host = new URL(href.replace(/&amp;/g, '&')).hostname.replace(/^www\./, ''); } catch { return m; }
+    if (host === siteHost || /\btarget=/.test(pre + post)) return m;
+    return `<a ${pre}href="${href}"${post} target="_blank" rel="noopener noreferrer">`;
+  });
+}
+
 function write(path, content) {
+  if (path.endsWith('.html') || !path.includes('.')) content = externalLinks(content);
   const file = path.endsWith('.html') || path.includes('.') && !path.endsWith('/') ? join(OUT, path) : join(OUT, path, 'index.html');
   mkdirSync(join(file, '..'), { recursive: true });
   writeFileSync(file, content);

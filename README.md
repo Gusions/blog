@@ -26,5 +26,6 @@ npm run build    # generates ./dist
 - `/topics` and `/topics/<topic>`, `/writing`, `/feed.xml`, `/sitemap.xml`
 - Black and white theme by default, with a switch to the color theme (automatic dark mode)
 - Clean URLs (`/slug`): `dist/` is published on Netlify, deployed from `main`
+- Links: internal links open in the same tab, external links in a new tab (`target="_blank" rel="noopener noreferrer"`, added automatically by the build)
 
 Before publishing, set `url` in `site.json`.
