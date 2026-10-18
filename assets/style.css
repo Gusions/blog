@@ -4,7 +4,7 @@
   --muted: #777777;
   --line: #e7e7e7;
   --accent: #5b3fd6;
-  --max: 38rem;
+  --max: 37em;
   --font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
@@ -60,8 +60,8 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font);
-  font-size: 1.0625rem;
-  line-height: 1.6;
+  font-size: calc(15px + 0.25vw); /* same scale as stephango.com */
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -79,10 +79,10 @@ header.site .links { display: flex; gap: 1rem; color: var(--muted); }
 header.site .links a:hover { color: var(--fg); }
 
 /* headings */
-h1, h2, h3, h4 { line-height: 1.25; margin: 2rem 0 0.75rem; font-weight: 600; letter-spacing: -0.01em; }
-h1 { font-size: 1.9rem; margin-top: 0; letter-spacing: -0.02em; }
-h2 { font-size: 1.1rem; }
-h3 { font-size: 1.02rem; }
+h1, h2, h3, h4 { line-height: 1.3; margin: 1em 0 0.5em; font-weight: 500; letter-spacing: -0.015em; }
+h1 { font-size: calc(1.35em + 0.55vw); line-height: 1.25; margin-top: 0; margin-bottom: 0.25em; letter-spacing: -0.02em; }
+h2 { font-size: calc(1em + 0.2vw); }
+h3 { font-size: 1em; }
 h2 a { text-decoration: none; }
 h2.label, .more h2, .subscribe h2 { color: var(--muted); font-weight: 500; }
 .quiet { color: var(--muted); text-decoration: none; }
@@ -91,8 +91,8 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.25rem 0; }
 
 /* home */
 .latest { display: block; text-decoration: none; }
-.latest strong { display: block; font-size: 1.15rem; }
-.latest .meta, .meta { color: var(--muted); font-size: 0.9rem; display: block; margin: 0.15rem 0 0.4rem; }
+.latest strong { display: block; font-size: calc(1em + 0.2vw); font-weight: 500; }
+.latest .meta, .meta { color: var(--muted); font-size: 0.875em; display: block; margin: 0.15em 0 0.4em; }
 .latest .desc { display: block; color: var(--fg); }
 .latest em { font-style: normal; color: var(--accent); white-space: nowrap; }
 .latest:hover strong { text-decoration: underline; text-decoration-color: var(--line); }
@@ -109,7 +109,7 @@ ul.writing .date { color: var(--muted); font-variant-numeric: tabular-nums; marg
 /* post */
 article.post .meta { margin: -0.25rem 0 2rem; }
 .content > :first-child { margin-top: 0; }
-.content p, .content ul, .content ol, .content blockquote, .content pre, .content figure, .content table { margin: 0 0 1.1rem; }
+.content p, .content ul, .content ol, .content blockquote, .content pre, .content figure, .content table { margin: 0 0 1em; }
 .content ul, .content ol { padding-left: 1.4rem; }
 .content li { margin: 0.25rem 0; }
 .content a { color: var(--accent); text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent); }
@@ -123,7 +123,7 @@ article.post .meta { margin: -0.25rem 0 2rem; }
 .content table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
 .content th, .content td { border-bottom: 1px solid var(--line); padding: 0.4rem 0.6rem; text-align: left; }
 
-.post-topics { color: var(--muted); font-size: 0.9rem; margin: 2rem 0 0; }
+.post-topics { color: var(--muted); font-size: 0.875em; margin: 2rem 0 0; }
 .post-topics a { text-decoration: none; }
 .post-topics a:hover { text-decoration: underline; }
 
@@ -139,12 +139,10 @@ article.post .meta { margin: -0.25rem 0 2rem; }
 .subscribe { margin-top: 2rem; }
 .subscribe h2 { margin-top: 0; }
 .subscribe p { margin: 0; }
-footer.site { display: flex; gap: 1rem; margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
+footer.site { display: flex; gap: 1rem; margin-top: 3rem; color: var(--muted); font-size: 0.875em; }
 footer.site a { text-decoration: none; }
 footer.site a:hover { color: var(--fg); text-decoration: underline; }
 
 @media (max-width: 480px) {
-  body { font-size: 1rem; }
-  h1 { font-size: 1.6rem; }
   header.site { margin-bottom: 2rem; }
 }
