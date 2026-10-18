@@ -1,5 +1,5 @@
-// Generatore di sito statico: Markdown (stile Obsidian) → HTML
-// Uso: node build.mjs  →  output in ./dist
+// Static site generator: Markdown (Obsidian-style) → HTML
+// Usage: node build.mjs  →  output in ./dist
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, cpSync, existsSync } from 'node:fs';
 import { join, basename } from 'node:path';
 import { marked } from 'marked';
@@ -8,7 +8,7 @@ const cfg = JSON.parse(readFileSync('site.json', 'utf8'));
 const L = cfg.labels;
 const OUT = 'dist';
 
-// ---------- utilità ----------
+// ---------- utilities ----------
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const pad2 = (n) => String(n).padStart(2, '0');
 const fmtDate = (d) => `${pad2(d.getUTCDate())}/${pad2(d.getUTCMonth() + 1)}/${d.getUTCFullYear()}`; // GG/MM/YYYY
@@ -41,7 +41,7 @@ function parseFrontmatter(raw) {
 
 const readDir = (dir) => (existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.md')) : []);
 
-// ---------- caricamento contenuti ----------
+// ---------- content loading ----------
 const posts = readDir('content/posts')
   .map((f) => {
     const { data, body } = parseFrontmatter(readFileSync(join('content/posts', f), 'utf8'));
@@ -66,7 +66,7 @@ const pages = readDir('content/pages').map((f) => {
   return { slug, title: data.title || slug, description: data.description || '', rawBody: body };
 });
 
-// risoluzione [[wikilink]] (per slug o titolo)
+// [[wikilink]] resolution (by slug or title)
 const byKey = new Map();
 for (const p of posts) { byKey.set(p.slug.toLowerCase(), p); byKey.set(p.title.toLowerCase(), p); }
 for (const p of pages) { byKey.set(p.slug.toLowerCase(), p); }

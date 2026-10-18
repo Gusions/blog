@@ -1,4 +1,4 @@
-// Server di sviluppo: ricostruisce il sito a ogni modifica e lo serve su http://localhost:3000
+// Dev server: rebuilds the site on every change and serves it on http://localhost:3000
 import http from 'node:http';
 import { readFileSync, existsSync, statSync, watch } from 'node:fs';
 import { execFileSync } from 'node:child_process';
