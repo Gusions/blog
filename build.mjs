@@ -166,7 +166,7 @@ ${img ? `<meta property="og:image" content="${esc(img)}">\n<meta name="twitter:c
 <div class="wrap">
 <header class="site">
   <nav class="crumbs"><a class="brand" href="/">${esc(cfg.title)}</a>${crumb ? ` <span class="sep">/</span> <a href="/">${esc(L.writing)}</a>` : ''}</nav>
-  <nav class="links">${nav}<button class="theme-toggle" type="button" data-mono="${esc(L.themeToMono)}" data-color="${esc(L.themeToColor)}" aria-label="${esc(L.themeToMono)}" title="${esc(L.themeToMono)}"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button></nav>
+  <nav class="links">${nav}<button class="theme-toggle" type="button" role="switch" aria-checked="false" data-mono="${esc(L.themeToMono)}" data-color="${esc(L.themeToColor)}" aria-label="${esc(L.themeSwitch)}" title="${esc(L.themeToColor)}"><span class="knob" aria-hidden="true"></span></button></nav>
 </header>
 <main>
 ${body}
@@ -181,8 +181,8 @@ ${subscribeBlock()}
   function cur(){return root.getAttribute('data-theme')==='mono'?'mono':'default';}
   function sync(){
     var m=cur()==='mono';
-    var label=m?b.getAttribute('data-color'):b.getAttribute('data-mono');
-    b.setAttribute('aria-label',label);b.setAttribute('title',label);b.setAttribute('aria-pressed',m?'true':'false');
+    b.setAttribute('aria-checked',m?'false':'true');
+    b.setAttribute('title',m?b.getAttribute('data-color'):b.getAttribute('data-mono'));
   }
   b.addEventListener('click',function(){
     var n=cur()==='mono'?'default':'mono';

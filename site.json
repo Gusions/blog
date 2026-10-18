@@ -6,8 +6,14 @@
   "lang": "en",
   "locale": "en-US",
   "nav": [
-    { "label": "About", "href": "/about" },
-    { "label": "Now", "href": "/now" }
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Now",
+      "href": "/now"
+    }
   ],
   "labels": {
     "latest": "Latest",
@@ -22,17 +28,40 @@
     "subscribeText": "Get new posts via",
     "notFound": "Page not found",
     "themeToMono": "Switch to black and white theme",
-    "themeToColor": "Switch to color theme"
+    "themeToColor": "Switch to color theme",
+    "themeSwitch": "Color theme"
   },
   "social": [
-    { "label": "RSS", "href": "/feed.xml" },
-    { "label": "X", "href": "https://x.com/gusions" },
-    { "label": "Instagram", "href": "https://www.instagram.com/gusions" },
-    { "label": "Facebook", "href": "https://www.facebook.com/gusions" },
-    { "label": "GitHub", "href": "https://github.com/Gusions" }
+    {
+      "label": "RSS",
+      "href": "/feed.xml"
+    },
+    {
+      "label": "X",
+      "href": "https://x.com/gusions"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/gusions"
+    },
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/gusions"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/Gusions"
+    }
   ],
   "footerLinks": [
-    { "label": "/about", "href": "/about", "title": "About me" },
-    { "label": "GitHub", "href": "https://github.com/Gusions" }
+    {
+      "label": "/about",
+      "href": "/about",
+      "title": "About me"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/Gusions"
+    }
   ]
 }
