@@ -25,6 +25,7 @@ npm run build    # generates ./dist
 - `[[Title]]` or `[[slug]]` in files become internal links
 - `/topics` and `/topics/<topic>`, `/writing`, `/feed.xml`, `/sitemap.xml`
 - Black and white theme by default, with a switch to the color theme (automatic dark mode)
+- Images: `![alt](/assets/photo.png)` renders with rounded corners. An italic line right after the image becomes its caption. Add flags after a pipe in the alt text: `![alt|wide](…)` for a full-width image, `![alt|outline](…)` for a 1px border
 - Clean URLs (`/slug`): `dist/` is published on Netlify, deployed from `main`
 - Links: internal links open in the same tab, external links in a new tab (`target="_blank" rel="noopener noreferrer"`, added automatically by the build)
 

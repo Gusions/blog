@@ -82,7 +82,19 @@ function resolveWikilinks(md) {
   });
 }
 
-marked.use({ gfm: true, breaks: false });
+// Images: `![alt](/assets/x.png)`; flags after a pipe in the alt text: `|wide` (breaks out of the column,
+// no rounded corners) and `|outline` (1px border). A line in italics right after the image is its caption.
+marked.use({
+  gfm: true,
+  breaks: false,
+  renderer: {
+    image({ href, title, text }) {
+      const [alt, ...flags] = String(text ?? '').split('|').map((x) => x.trim());
+      const cls = flags.filter((f) => f === 'wide' || f === 'outline').join(' ');
+      return `<img src="${esc(href)}" alt="${esc(alt)}"${title ? ` title="${esc(title)}"` : ''}${cls ? ` class="${cls}"` : ''} loading="lazy" decoding="async">`;
+    },
+  },
+});
 
 for (const item of [...posts, ...pages]) {
   item.body = resolveWikilinks(item.rawBody);
