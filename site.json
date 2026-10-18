@@ -1,0 +1,35 @@
+{
+  "title": "Gusions",
+  "author": "Gusions",
+  "description": "Thoughts and experiences by Gusions.",
+  "url": "https://gusions.netlify.app",
+  "lang": "en",
+  "locale": "en-US",
+  "nav": [
+    { "label": "About", "href": "/about" },
+    { "label": "Now", "href": "/now" }
+  ],
+  "labels": {
+    "latest": "Latest",
+    "topics": "Topics",
+    "writing": "Writing",
+    "readMore": "Keep reading →",
+    "minuteRead": "min read",
+    "oneMinuteRead": "1 min read",
+    "linkedMentions": "Linked mentions",
+    "related": "You might also enjoy",
+    "subscribeTitle": "Follow along",
+    "subscribeText": "Get new posts via",
+    "notFound": "Page not found",
+    "themeToMono": "Switch to black and white theme",
+    "themeToColor": "Switch to color theme"
+  },
+  "social": [
+    { "label": "RSS", "href": "/feed.xml" },
+    { "label": "GitHub", "href": "https://github.com/Gusions" }
+  ],
+  "footerLinks": [
+    { "label": "/about", "href": "/about", "title": "About me" },
+    { "label": "GitHub", "href": "https://github.com/Gusions" }
+  ]
+}
