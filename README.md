@@ -1,4 +1,4 @@
-# Blog statico in stile stephango.com
+# Gusions — blog statico
 
 Markdown (compatibile Obsidian) → HTML statico. Una sola dipendenza (`marked`).
 

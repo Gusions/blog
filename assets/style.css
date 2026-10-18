@@ -60,7 +60,7 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font);
-  font-size: calc(15px + 0.25vw); /* same scale as stephango.com */
+  font-size: calc(15px + 0.25vw);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
