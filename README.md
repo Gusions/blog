@@ -1,29 +1,30 @@
-# Gusions — blog statico
+# Gusions — static blog
 
-Markdown (compatibile Obsidian) → HTML statico. Una sola dipendenza (`marked`).
+Markdown (Obsidian-compatible) → static HTML. One dependency (`marked`).
 
-## Uso
+## Usage
 
 ```bash
 npm install
-npm run dev      # build + server su http://localhost:3000 con rebuild automatico
-npm run build    # genera ./dist
+npm run dev      # build + server on http://localhost:3000 with automatic rebuild
+npm run build    # generates ./dist
 ```
 
-## Struttura
+## Structure
 
-- `site.json` — titolo, autore, URL, menu, etichette, link social/footer
-- `content/posts/*.md` — i saggi (frontmatter: `title`, `date`, `topics`, `description`, `cover`, `draft`)
-- `content/pages/*.md` — pagine fisse (About, Now, Subscribe)
-- `assets/` — CSS e immagini (opzionale `assets/card.png` per l'anteprima social)
-- `build.mjs` — il generatore
+- `site.json` — title, author, URL, menu, labels, social and footer links
+- `content/posts/*.md` — the posts (front matter: `title`, `date` as `DD/MM/YYYY`, `topics`, `description`, `cover`, `draft`)
+- `content/pages/*.md` — fixed pages (About, Now, Subscribe)
+- `assets/` — CSS and images (optional `assets/card.png` for the social preview)
+- `build.mjs` — the generator
 
-## Funzionamento
+## How it works
 
-- Home: ultimo post in evidenza, argomenti, elenco "AAAA · MM Titolo"
-- Post: titolo, data · tempo di lettura, "Citato in" (backlink automatici), "Potrebbe interessarti" (per argomenti in comune)
-- `[[Titolo]]` o `[[slug]]` nei file diventano link interni
-- `/topics` e `/topics/<argomento>`, `/writing`, `/feed.xml`, `/sitemap.xml`, dark mode automatica
-- URL puliti (`/slug`): `dist/` si pubblica su Cloudflare Pages, Netlify, Vercel o GitHub Pages
+- Home: latest post featured, topics, list of posts
+- Post: title, date · reading time, "Linked mentions" (automatic backlinks), "You might also enjoy" (by shared topics)
+- `[[Title]]` or `[[slug]]` in files become internal links
+- `/topics` and `/topics/<topic>`, `/writing`, `/feed.xml`, `/sitemap.xml`
+- Black and white theme by default, with a switch to the color theme (automatic dark mode)
+- Clean URLs (`/slug`): `dist/` is published on Netlify, deployed from `main`
 
-Prima di pubblicare, cambia `url` in `site.json`.
+Before publishing, set `url` in `site.json`.

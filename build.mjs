@@ -89,7 +89,7 @@ for (const item of [...posts, ...pages]) {
   if (!item.description) item.description = item.plain.slice(0, 160).trim();
 }
 
-// ---------- grafo: menzioni, correlati, argomenti ----------
+// ---------- graph: mentions, related, topics ----------
 const bySlug = new Map(posts.map((p) => [p.slug, p]));
 const backlinks = new Map(posts.map((p) => [p.slug, []]));
 for (const p of [...posts, ...pages]) {
@@ -267,7 +267,7 @@ ${rel.length ? `<section class="more"><h2>${esc(L.related)}</h2><ul class="plain
   }));
 }
 
-// pagine statiche (about, now, subscribe…)
+// static pages (about, now, subscribe…)
 for (const pg of pages) {
   write(`/${pg.slug}`, layout({
     title: pg.title, description: pg.description, path: `/${pg.slug}`, crumb: true,
@@ -275,7 +275,7 @@ for (const pg of pages) {
   }));
 }
 
-// argomenti
+// topics
 write('/topics', layout({
   title: L.topics, description: cfg.description, path: '/topics', crumb: true,
   body: `<h1>${esc(L.topics)}</h1>\n<p class="topics">${topics.map((t) => `<a href="/topics/${slugify(t)}">${esc(t)}</a>`).join(', ')}</p>`,
@@ -328,4 +328,4 @@ ${urls.map((u) => `  <url><loc>${cfg.url}${u === '/' ? '/' : u}</loc></url>`).jo
   write('/robots.txt', `User-agent: *\nAllow: /\nSitemap: ${cfg.url}/sitemap.xml\n`);
 }
 
-console.log(`✓ ${posts.length} post, ${pages.length} pagine, ${topics.length} argomenti → ${OUT}/`);
+console.log(`✓ ${posts.length} posts, ${pages.length} pages, ${topics.length} topics → ${OUT}/`);
