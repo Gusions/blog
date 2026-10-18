@@ -7,7 +7,7 @@ description: Kith, a personal CRM that lives inside Obsidian.
 
 A contact is a name and a few facts. It fits on an index card. It doesn't need a server.
 
-Most CRMs ask you to move your people into their app. I wanted the app to move into my notes. So I built Kith.
+Most CRMs ask you to move your people into their app. I wanted the app to move into my notes. So I built [Kith](https://github.com/Gusions/obsidian-kith).
 
 ## What it is
 
