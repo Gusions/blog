@@ -137,7 +137,7 @@ function layout({ title, description, path, image, body, crumb = false, type = '
   const img = image ? (image.startsWith('http') ? image : cfg.url + image) : fallbackImg;
   const nav = cfg.nav.map((n) => `<a href="${esc(n.href)}">${esc(n.label)}</a>`).join(' ');
   return `<!doctype html>
-<html lang="${esc(cfg.lang)}">
+<html lang="${esc(cfg.lang)}" data-theme="mono">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
