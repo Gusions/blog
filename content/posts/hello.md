@@ -1,6 +1,6 @@
 ---
 title: Hello, this is Gusions
-date: 2026-10-18
+date: 18/10/2026
 topics: [writing, thoughts]
 description: Why this site exists and what I plan to write about here.
 ---

@@ -10,8 +10,12 @@ const OUT = 'dist';
 
 // ---------- utilità ----------
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-const dateFmt = new Intl.DateTimeFormat(cfg.locale, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
-const fmtDate = (d) => dateFmt.format(d);
+const pad2 = (n) => String(n).padStart(2, '0');
+const fmtDate = (d) => `${pad2(d.getUTCDate())}/${pad2(d.getUTCMonth() + 1)}/${d.getUTCFullYear()}`; // GG/MM/YYYY
+const parseDate = (v) => {
+  const m = String(v ?? '').trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/); // GG/MM/YYYY
+  return m ? new Date(Date.UTC(+m[3], +m[2] - 1, +m[1])) : new Date(v);
+};
 const ym = (d) => `${d.getUTCFullYear()} · ${String(d.getUTCMonth() + 1).padStart(2, '0')}`;
 const slugify = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const stripMd = (s) => s.replace(/```[\s\S]*?```/g, '').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/[#>*_`~-]/g, '').replace(/\s+/g, ' ').trim();
@@ -45,7 +49,7 @@ const posts = readDir('content/posts')
     return {
       slug,
       title: data.title || slug,
-      date: new Date(data.date),
+      date: parseDate(data.date),
       topics: Array.isArray(data.topics) ? data.topics : data.topics ? [data.topics] : [],
       description: data.description || '',
       cover: data.cover || '',
