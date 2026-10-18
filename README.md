@@ -14,7 +14,7 @@ npm run build    # generates ./dist
 
 - `site.json` — title, author, URL, menu, labels, social and footer links
 - `content/posts/*.md` — the posts (front matter: `title`, `date` as `DD/MM/YYYY`, `topics`, `description`, `cover`, `draft`)
-- `content/pages/*.md` — fixed pages (About, Now, Subscribe)
+- `content/pages/*.md` — fixed pages (About, Now, Subscribe); `draft: true` hides a page and its menu entry
 - `assets/` — CSS and images (optional `assets/card.png` for the social preview)
 - `build.mjs` — the generator
 

@@ -60,11 +60,14 @@ const posts = readDir('content/posts')
   .filter((p) => !p.draft)
   .sort((a, b) => b.date - a.date);
 
-const pages = readDir('content/pages').map((f) => {
+const allPages = readDir('content/pages').map((f) => {
   const { data, body } = parseFrontmatter(readFileSync(join('content/pages', f), 'utf8'));
   const slug = data.slug || basename(f, '.md');
-  return { slug, title: data.title || slug, description: data.description || '', rawBody: body };
+  return { slug, title: data.title || slug, description: data.description || '', rawBody: body, draft: data.draft === 'true' };
 });
+// pages marked `draft: true` are not built; menu entries pointing to them are hidden automatically
+const hiddenPaths = new Set(allPages.filter((p) => p.draft).map((p) => `/${p.slug}`));
+const pages = allPages.filter((p) => !p.draft);
 
 // [[wikilink]] resolution (by slug or title)
 const byKey = new Map();
@@ -139,7 +142,7 @@ function layout({ title, description, path, image, body, crumb = false, type = '
   const fullTitle = path === '/' ? cfg.title : `${title} · ${cfg.title}`;
   const fallbackImg = existsSync('assets/card.png') ? `${cfg.url}/assets/card.png` : '';
   const img = image ? (image.startsWith('http') ? image : cfg.url + image) : fallbackImg;
-  const nav = cfg.nav.map((n) => `<a href="${esc(n.href)}">${esc(n.label)}</a>`).join(' ');
+  const nav = cfg.nav.filter((n) => !hiddenPaths.has(n.href.replace(/\/$/, ''))).map((n) => `<a href="${esc(n.href)}">${esc(n.label)}</a>`).join(' ');
   return `<!doctype html>
 <html lang="${esc(cfg.lang)}" data-theme="mono">
 <head>
