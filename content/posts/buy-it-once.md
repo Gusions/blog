@@ -15,6 +15,9 @@ The first thing you notice is the canvas. It's thick and a little rough, and it 
 
 I had mine for years. I lost it, and I miss it.
 
+![Carhartt jacket](/assets/carhartt-jacket.jpg)
+*The kind of jacket I mean.*
+
 There's also trust. After a few seasons you stop wondering whether it will hold. You stop thinking about it at all, and that's the point.
 
 Then there's repair, the part nobody advertises. When a good jacket tears, you patch it. A patch on workwear is a record, not a flaw.
