@@ -164,6 +164,9 @@ function layout({ title, description, path, image, body, crumb = false, type = '
 <meta name="description" content="${esc(description || cfg.description)}">
 <meta name="author" content="${esc(cfg.author)}">
 <link rel="canonical" href="${esc(url)}">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="${esc(cfg.title)}" href="/feed.xml">
 <script>try{var t=localStorage.getItem('theme');if(t==='mono'||t==='default')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <link rel="stylesheet" href="/assets/style.css">
