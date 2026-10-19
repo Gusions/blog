@@ -9,7 +9,7 @@ A jacket should get better the longer you wear it. Most don't.
 
 Most clothes are at their best on the day you buy them. The fabric is stiff, the color is right, the seams are flat. Then the washing starts. You wear it for a season, then you replace it.
 
-Work clothes are built on the opposite idea. Carhartt started in Michigan in 1889, making overalls for railroad workers. Those men needed clothes that survived the job, so the clothes were made to survive it.
+Work clothes are built on the opposite idea. [Carhartt](https://www.carhartt.com) started in Michigan in 1889, making overalls for railroad workers. Those men needed clothes that survived the job, so the clothes were made to survive it.
 
 The first thing you notice is the canvas. It's thick and a little rough, and it softens in its own time, fading where you bend and carry. I like clothes that show time instead of hiding it.
 
