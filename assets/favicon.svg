@@ -1,16 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="5 4 53 53">
   <style>
-    .bg { fill: #000; }
-    .st { fill: none; stroke: #fff; stroke-width: 4; }
-    .fl { fill: #fff; }
+    .st { fill: none; stroke: #000; stroke-width: 4.5; }
+    .fl { fill: #000; }
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #fff; }
-      .st { stroke: #000; }
-      .fl { fill: #000; }
+      .st { stroke: #fff; }
+      .fl { fill: #fff; }
     }
   </style>
   <clipPath id="a"><circle cx="26" cy="27" r="15"/></clipPath>
-  <rect class="bg" width="64" height="64" rx="14"/>
   <circle class="st" cx="26" cy="27" r="15"/>
   <circle class="st" cx="40" cy="38" r="12"/>
   <circle class="fl" cx="40" cy="38" r="12" clip-path="url(#a)"/>
