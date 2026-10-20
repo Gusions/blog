@@ -1,6 +1,5 @@
 ---
 title: Wear it until it's yours
-slug: buy-it-once
 date: 01/01/2025
 topics: [style, thoughts]
 description: Why I choose clothes that get better with time.
