@@ -1,6 +1,6 @@
 ---
 title: Buy it once
-date: 01/02/2026
+date: 01/01/2025
 topics: [style, thoughts]
 description: Why I choose clothes that get better with time.
 ---
