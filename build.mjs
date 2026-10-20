@@ -287,7 +287,6 @@ for (const p of posts) {
 ${p.html}
   </div>
 </article>
-${p.topics.length ? `<p class="post-topics">${topicLinks(p.topics)}</p>` : ''}
 <hr>
 ${mentions.length ? `<section class="more"><h2>${esc(L.linkedMentions)}</h2><ul>${mentions.map(cardLink).join('')}</ul></section>` : ''}
 ${rel.length ? `<section class="more"><h2>${esc(L.related)}</h2><ul class="plain">${rel.map((o) => `<li><a href="/${o.slug}">${esc(o.title)}</a></li>`).join('')}</ul></section>` : ''}`;
