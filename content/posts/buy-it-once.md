@@ -1,5 +1,6 @@
 ---
-title: Buy it once
+title: Wear it until it's yours
+slug: buy-it-once
 date: 01/01/2025
 topics: [style, thoughts]
 description: Why I choose clothes that get better with time.
@@ -26,4 +27,4 @@ The honest limits: it's heavy. It takes weeks to break in. It's wrong for a hot 
 
 Choosing one brand isn't loyalty. It's a way to stop deciding. One less thing to compare, one less thing to replace.
 
-Buy it once. Wear it until it's yours.
+Buy it once.
