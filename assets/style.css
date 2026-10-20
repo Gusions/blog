@@ -202,6 +202,7 @@ article.post + hr { margin: 4em 0; }
 /* iscrizione + footer: filetto, poi 2.67em prima del titolo */
 .subscribe { margin-top: 2em; padding-top: 2.67em; border-top: 1px solid var(--line); }
 .subscribe h2 { margin-top: 1em; }
+main:has(article.post):not(:has(.more)) + .subscribe { margin-top: 4em; }
 .subscribe p { margin: 1em 0 0; }
 footer.site { display: flex; gap: 1rem; margin-top: 2.67em; color: var(--muted); font-size: 0.875em; }
 footer.site a { text-decoration: none; }

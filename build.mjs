@@ -287,7 +287,7 @@ for (const p of posts) {
 ${p.html}
   </div>
 </article>
-<hr>
+${mentions.length || rel.length ? '<hr>' : ''}
 ${mentions.length ? `<section class="more"><h2>${esc(L.linkedMentions)}</h2><ul>${mentions.map(cardLink).join('')}</ul></section>` : ''}
 ${rel.length ? `<section class="more"><h2>${esc(L.related)}</h2><ul class="plain">${rel.map((o) => `<li><a href="/${o.slug}">${esc(o.title)}</a></li>`).join('')}</ul></section>` : ''}`;
   write(`/${p.slug}`, layout({
