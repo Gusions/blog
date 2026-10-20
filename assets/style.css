@@ -180,7 +180,7 @@ html, body { overflow-x: clip; }
 
 
 /* menzioni e correlati */
-/* Fine post: spazi come Stephango (em = 15px lì): hr 4em, blocchi 5.33em, label 1.33em */
+/* Post ending: hr 4em, blocks 5.33em, label 1.33em (em relative to body size) */
 article.post + hr { margin: 4em 0; }
 .more { padding-bottom: 5.33em; }
 .more:last-child { padding-bottom: 0.67em; }
