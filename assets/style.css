@@ -105,7 +105,7 @@ header.site .links a:hover { color: var(--fg); }
 /* headings */
 h1, h2, h3, h4 { line-height: 1.3; margin: 1em 0 0.5em; font-weight: 500; letter-spacing: -0.015em; }
 h1 { font-size: calc(1.35em + 0.55vw); line-height: 1.25; margin-top: 0; margin-bottom: 0.25em; letter-spacing: -0.02em; }
-h2 { font-size: calc(1em + 0.2vw); }
+h2 { font-size: calc(1em + 0.2vw); font-weight: 700; }
 h3 { font-size: 1em; }
 h2 a { text-decoration: none; }
 h2.label, .more h2, .subscribe h2 { color: var(--muted); font-weight: 500; }
