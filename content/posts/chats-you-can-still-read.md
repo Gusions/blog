@@ -35,6 +35,4 @@ It isn't a converter. Parley only reads. It never creates notes in your vault, a
 
 ## Try it
 
-The code is public on [GitHub](https://github.com/Gusions/obsidian-parley). It's version 0.1.0, so expect rough edges.
-
-Back up your chats. Then make sure you can still read them.
+The code is public on [GitHub](https://github.com/Gusions/obsidian-parley).
