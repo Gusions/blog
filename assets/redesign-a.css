@@ -1,0 +1,43 @@
+/* Redesign A: editorial. Serif display, calm reading, table-of-contents home. */
+@font-face { font-family: "Instrument Serif"; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/instrument-serif-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; font-display: swap; src: url(/assets/fonts/instrument-serif-latin-400-italic.woff2) format("woff2"); }
+@font-face { font-family: "Source Serif 4"; font-style: normal; font-weight: 200 900; font-display: swap; src: url(/assets/fonts/source-serif-4-latin-wght-normal.woff2) format("woff2"); }
+@font-face { font-family: "Source Serif 4"; font-style: italic; font-weight: 200 900; font-display: swap; src: url(/assets/fonts/source-serif-4-latin-wght-italic.woff2) format("woff2"); }
+:root { --display: "Instrument Serif", "Iowan Old Style", Georgia, serif; --serif: "Source Serif 4", "Iowan Old Style", Georgia, serif; --max: 40em; --muted: #666; }
+html[data-theme="mono"] { --muted: #595959; --line: #d9d9d9; }
+html[data-theme="mono"] ::selection { background: #000; color: #fff; }
+.wrap { padding-top: 2.2rem; }
+header.site { margin-bottom: clamp(3.5rem, 9vw, 6.5rem); }
+.mono-label { font-family: var(--mono); font-size: .72em; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+
+/* home */
+.kicker { composes: mono-label; font-family: var(--mono); font-size: .72em; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); margin: 0 0 1.6rem; }
+.toc { list-style: none; margin: 0 0 clamp(3rem,8vw,5rem); padding: 0; border-top: 1px solid var(--fg); }
+.toc li { border-bottom: 1px solid var(--line); }
+.toc a { display: grid; grid-template-columns: 2.6em 1fr auto; column-gap: .5rem; align-items: baseline; padding: clamp(.9rem,2.4vw,1.5rem) 0; text-decoration: none; transition: opacity .25s; }
+.toc .n, .toc .d { font-family: var(--mono); font-size: .72em; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.toc .t { font-family: var(--display); font-size: clamp(2.1rem, 6.4vw, 3.7rem); line-height: 1.04; letter-spacing: -.012em; }
+.toc .s { grid-column: 2; display: block; max-height: 0; overflow: hidden; opacity: 0; color: var(--muted); transition: max-height .35s ease, opacity .3s ease, margin .3s ease; }
+.toc .s em { font-style: normal; color: var(--fg); }
+.toc li:first-child .s, .toc a:hover .s, .toc a:focus-visible .s { max-height: 9em; opacity: 1; margin-top: .55rem; }
+.toc:hover a:not(:hover) { opacity: .3; }
+.toc a:hover .t { font-style: italic; }
+.meta-row { font-size: .9em; color: var(--muted); }
+.meta-row a { text-decoration: none; color: var(--muted); }
+.meta-row a:hover { color: var(--fg); text-decoration: underline; }
+.meta-row .k { font-family: var(--mono); font-size: .8em; letter-spacing: .09em; text-transform: uppercase; margin-right: .6rem; }
+@media (hover: none) { .toc .s { max-height: 9em; opacity: 1; margin-top: .55rem; } }
+@media (max-width: 520px) { .toc a { grid-template-columns: 1.9em 1fr; } .toc .d { grid-column: 2; margin-top: .35rem; } }
+
+/* post */
+article.post h1 { font-family: var(--display); font-weight: 400; font-size: clamp(2.5rem, 7vw, 4.2rem); line-height: 1.02; letter-spacing: -.015em; text-wrap: balance; margin-bottom: .35em; }
+article.post .meta { font-family: var(--mono); font-size: .72em; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0 0 clamp(2.4rem, 6vw, 3.6rem); }
+.content { font-family: var(--serif); font-size: 1.12em; line-height: 1.64; font-optical-sizing: auto; }
+.content > p:first-child { font-size: 1.16em; line-height: 1.5; }
+.content p, .content li, .content blockquote { text-wrap: pretty; }
+.content p, .content ul, .content ol { margin-bottom: 1.1em; }
+.content h2, .content h3 { font-family: var(--font); font-size: 1em; margin-top: 2.2em; }
+.content h2 { font-weight: 650; }
+.content code { font-size: .8em; }
+.content pre code { font-size: 1em; }
+:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
