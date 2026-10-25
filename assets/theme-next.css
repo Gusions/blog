@@ -1,0 +1,34 @@
+/* Theme preview: typographic refinements on top of style.css */
+@font-face { font-family: "Source Serif 4"; font-style: normal; font-weight: 200 900; font-display: swap; src: url(/assets/fonts/source-serif-4-latin-wght-normal.woff2) format("woff2"); }
+@font-face { font-family: "Source Serif 4"; font-style: italic; font-weight: 200 900; font-display: swap; src: url(/assets/fonts/source-serif-4-latin-wght-italic.woff2) format("woff2"); }
+
+:root {
+  --serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --muted: #6b6b6b;
+  --max: 38em;
+}
+html[data-theme="mono"] { --muted: #5c5c5c; --line: #dcdcdc; }
+html[data-theme="mono"] ::selection { background: #000; color: #fff; }
+body { font-kerning: normal; text-rendering: optimizeLegibility; }
+
+/* reading text: serif, a touch larger, more air */
+.content { font-family: var(--serif); font-size: 1.1em; line-height: 1.62; font-optical-sizing: auto; hyphens: manual; }
+.content p, .content ul, .content ol, .content blockquote { margin-bottom: 1.05em; }
+.content p, .content li, .content blockquote { text-wrap: pretty; }
+.content h2, .content h3 { font-family: var(--font); font-size: 1em; line-height: 1.3; margin-top: 2em; }
+.content h2 { font-weight: 650; }
+.content code { font-size: 0.8em; }
+.content pre code { font-size: 1em; }
+.content blockquote { font-style: italic; }
+.content a { text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
+
+/* titles and meta */
+h1 { text-wrap: balance; font-weight: 550; letter-spacing: -0.022em; }
+article.post h1 { font-size: calc(1.55em + 0.6vw); line-height: 1.18; }
+.meta, .date, time { font-variant-numeric: tabular-nums; }
+article.post .meta { margin-bottom: 2.6rem; }
+
+/* quieter chrome */
+header.site .links, footer.site, .more h2, .subscribe h2 { letter-spacing: 0.005em; }
+.more ul.plain a, .subscribe p, footer.site { font-size: 0.95em; }
+:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; border-radius: 2px; }
