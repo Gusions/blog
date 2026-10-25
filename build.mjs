@@ -265,8 +265,7 @@ if (existsSync('public')) cpSync('public', OUT, { recursive: true });
 <section>
   <h2><a href="/writing">${esc(L.writing)}</a></h2>
   ${writingList()}
-</section>
-<hr>`;
+</section>`;
   write('/index.html', layout({ title: cfg.title, description: cfg.description, path: '/', body }));
 }
 
