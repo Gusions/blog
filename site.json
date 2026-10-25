@@ -29,8 +29,7 @@
     "notFound": "Page not found",
     "themeToMono": "Switch to black and white theme",
     "themeToColor": "Switch to color theme",
-    "themeSwitch": "Color theme",
-    "allWriting": "All writing"
+    "themeSwitch": "Color theme"
   },
   "social": [
     {
@@ -64,6 +63,5 @@
       "label": "GitHub",
       "href": "https://github.com/Gusions"
     }
-  ],
-  "tagline": "Notes on what I build, wear and think about"
+  ]
 }
