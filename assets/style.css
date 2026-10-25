@@ -247,8 +247,7 @@ header.site { margin-bottom: clamp(3.5rem, 9vw, 6.5rem); }
 /* post */
 article.post h1 { font-family: var(--display); font-weight: 400; font-size: clamp(2.5rem, 7vw, 4.2rem); line-height: 1.02; letter-spacing: -0.015em; text-wrap: balance; margin-bottom: 0.35em; }
 article.post .meta { font-family: var(--mono); font-size: 0.72em; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 0 0 clamp(2.4rem, 6vw, 3.6rem); font-variant-numeric: tabular-nums; }
-.content { font-family: var(--serif); font-size: 1.12em; line-height: 1.64; font-optical-sizing: auto; }
-.content > p:first-child { font-size: 1.16em; line-height: 1.5; }
+.content { font-family: var(--serif); font-size: 1.05em; line-height: 1.64; font-optical-sizing: auto; }
 .content p, .content li, .content blockquote { text-wrap: pretty; }
 .content p, .content ul, .content ol { margin-bottom: 1.1em; }
 .content h2, .content h3 { font-family: var(--font); font-size: 1em; margin-top: 2.2em; }
