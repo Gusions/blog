@@ -242,38 +242,25 @@ mkdirSync(OUT, { recursive: true });
 if (existsSync('assets')) cpSync('assets', join(OUT, 'assets'), { recursive: true });
 if (existsSync('public')) cpSync('public', OUT, { recursive: true });
 
+const pad = (n) => String(n).padStart(2, '0');
+const tocItem = (p, i) => `<li><a href="/${p.slug}"><span class="n">${pad(posts.length - i)}</span><span class="t">${esc(p.title)}</span><span class="d">${pad(p.date.getUTCMonth() + 1)}/${p.date.getUTCFullYear()}</span>${p.description ? `<span class="s">${esc(p.description)} <em>${esc(L.readMore)}</em></span>` : ''}</a></li>`;
+
 // home
 {
-  const latest = posts[0];
-  const latestHtml = latest
-    ? `<section class="latest-block">
-  <h2 class="label">${esc(L.latest)}</h2>
-  <a class="latest" href="/${latest.slug}">
-    <strong>${esc(latest.title)}</strong>
-    <span class="meta">${fmtDate(latest.date)} · ${minLabel(latest.minutes)}</span>
-    <span class="desc">${esc(latest.description)} <em>${esc(L.readMore)}</em></span>
-  </a>
-</section>
-<hr>`
-    : '';
-  const body = `${latestHtml}
-<section>
-  <h2><a href="/topics">${esc(L.topics)}</a></h2>
-  <p class="topics">${topics.map((t) => `<a href="/topics/${slugify(t)}">${esc(t)}</a>`).join(', ')}</p>
-</section>
-<hr>
-<section>
-  <h2><a href="/writing">${esc(L.writing)}</a></h2>
-  ${writingList()}
-</section>
-<hr>`;
+  const HOME_MAX = 8;
+  const body = `${cfg.tagline ? `<p class="kicker">${esc(cfg.tagline)}</p>` : ''}
+<ol class="toc" reversed>
+${posts.slice(0, HOME_MAX).map(tocItem).join('\n')}
+</ol>
+${posts.length > HOME_MAX ? `<p class="all-writing"><a href="/writing">${esc(L.allWriting || L.writing)} →</a></p>` : ''}
+<p class="meta-row"><a class="k" href="/topics">${esc(L.topics)}</a>${topics.map((t) => `<a href="/topics/${slugify(t)}">${esc(t)}</a>`).join(', ')}</p>`;
   write('/index.html', layout({ title: cfg.title, description: cfg.description, path: '/', body }));
 }
 
 // writing
 write('/writing', layout({
   title: L.writing, description: cfg.description, path: '/writing', crumb: true,
-  body: `<h1>${esc(L.writing)}</h1>\n${writingList()}`,
+  body: `<h1>${esc(L.writing)}</h1>\n<ol class="toc" reversed>\n${posts.map(tocItem).join('\n')}\n</ol>`,
 }));
 
 // post
