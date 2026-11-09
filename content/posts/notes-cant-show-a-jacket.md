@@ -1,5 +1,5 @@
 ---
-title: Rack
+title: Notes can't show a jacket
 date: 02/11/2026
 topics: [projects, obsidian]
 description: Why I wanted my wardrobe to be more than a folder of notes.
