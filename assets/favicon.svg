@@ -1,14 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="5 4 53 53">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <style>
-    .st { fill: none; stroke: #000; stroke-width: 4.5; }
-    .fl { fill: #000; }
-    @media (prefers-color-scheme: dark) {
-      .st { stroke: #fff; }
-      .fl { fill: #fff; }
-    }
+    path { fill: #000; }
+    @media (prefers-color-scheme: dark) { path { fill: #fff; } }
   </style>
-  <clipPath id="a"><circle cx="26" cy="27" r="15"/></clipPath>
-  <circle class="st" cx="26" cy="27" r="15"/>
-  <circle class="st" cx="40" cy="38" r="12"/>
-  <circle class="fl" cx="40" cy="38" r="12" clip-path="url(#a)"/>
+  <path d="M32 2C32 24 40 32 62 32C40 32 32 40 32 62C32 40 24 32 2 32C24 32 32 24 32 2Z"/>
 </svg>
