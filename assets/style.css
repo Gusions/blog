@@ -15,8 +15,11 @@
     --fg: #dcdcdc;
     --muted: #8c8c8c;
     --line: #2c2c2c;
-    --accent: #a995ff;
+    --accent: #6fbf8f;
+    --accent-deep: #204f34;
   }
+  html:not([data-theme="mono"]) .theme-toggle { background: var(--accent-deep); }
+  html:not([data-theme="mono"]) .theme-toggle:hover { background: color-mix(in srgb, var(--accent-deep) 80%, var(--accent)); }
 }
 
 /* Tema bianco e nero (si attiva con lo switch nell'header) */
