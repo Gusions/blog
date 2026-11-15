@@ -27,11 +27,21 @@ So I built [Parley](https://github.com/Gusions/obsidian-parley), a plugin for [O
 
 ## What it is
 
-Parley reads an exported chat and shows it like a chat. Point it at a folder or a zip and you scroll through the conversation again, with its media linked where it belongs. It works with WhatsApp and Telegram exports.
+Parley reads an exported chat and shows it like a chat. Point it at a folder or a zip and you scroll through the conversation again, with photos, voice notes and documents where they belong. You can search inside a chat, jump to a date and browse the media in a gallery. It works with WhatsApp and Telegram exports.
+
+## Files over app
+
+Parley started as a reader and nothing more. It never touched my vault, and that was on purpose. Then I looked at what it meant: a chat that exists only inside a plugin isn't really mine. Turn the plugin off and the conversation is gone from my notes. That goes against the idea of files over app.
+
+So I added an import, and it only runs when you ask. It writes the open chat as plain Markdown: an index note and one note per month. Any app can open them, and Obsidian can search them.
+
+The media stays out. Copying years of photos and videos into the vault would make it huge. The notes list each attachment by file name, and the files stay in your export.
 
 ## What it isn't
 
-It isn't a converter. Parley only reads. It never creates notes in your vault, and your export stays exactly where you left it. It also works on desktop only.
+It isn't a media archive. Photos, videos and voice notes stay where the export put them. Parley shows them, but never moves them, and nothing is uploaded anywhere.
+
+It is built for desktop. Mobile is experimental: you can open a zip or a text file, but folders and saved libraries are desktop only.
 
 ## Try it
 
