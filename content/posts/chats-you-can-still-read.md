@@ -42,7 +42,3 @@ The media stays out. Copying years of photos and videos into the vault would mak
 It isn't a media archive. Photos, videos and voice notes stay where the export put them. Parley shows them, but never moves them, and nothing is uploaded anywhere.
 
 It is built for desktop. Mobile is experimental: you can open a zip or a text file, but folders and saved libraries are desktop only.
-
-## Try it
-
-The code is public on [GitHub](https://github.com/Gusions/obsidian-parley).
