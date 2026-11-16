@@ -247,3 +247,6 @@ ul.experience li:target strong { color: var(--accent); }
 header.site .crumbs { white-space: nowrap; }
 header.site { flex-wrap: wrap; row-gap: 0.5rem; }
 @media (max-width: 420px) { header.site .links { gap: 0.75rem; } header.site { gap: 0.75rem; } }
+header.site .links a + a::before { content: ""; display: inline-block; width: 1px; height: 0.9em; background: var(--line); margin-right: 1rem; vertical-align: -0.1em; }
+html[data-theme="mono"] header.site .links a + a::before { background: #d6d6d6; }
+@media (max-width: 420px) { header.site .links a + a::before { margin-right: 0.75rem; } }
