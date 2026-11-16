@@ -20,7 +20,7 @@ description: Where I have worked.
 </div>
 
 <ul class="experience">
-<li id="lexroom"><span class="when">2025—2026</span><strong>Lexroom</strong><span class="what">Senior marketing manager. First marketing hire at Italy&#x27;s most funded legal-tech startup. Built the function and a team of ten from scratch. Head of marketing in all but title.</span></li>
+<li id="lexroom"><span class="when">2025—2026</span><strong>Lexroom</strong><span class="what">Senior marketing manager. First marketing hire at Italy&#x27;s most funded legal-tech startup. Scaled from €500K to €25M ARR. Built the function and a team of ten from scratch. Head of marketing in all but title.</span></li>
 <li id="cosmico"><span class="when">2024—2025</span><strong>Cosmico</strong><span class="what">Freelance strategist and copywriter. Through Cosmico, for Caffeina and two of its clients: Hera on communication, Hoopygang on influencer marketing.</span></li>
 <li id="bowlpros"><span class="when">2023—2024</span><strong>Bowlpros</strong><span class="what">Head of e-commerce and marketing. Cut acquisition cost by 63% and raised the average order by 62%.</span></li>
 <li id="gility"><span class="when">2023</span><strong>Gility</strong><span class="what">Brand director. Repositioned the company as one of the main EdTech players in Italy, backed by €12.4M from CDP Venture Capital and BPER Banca.</span></li>
