@@ -154,7 +154,18 @@ function layout({ title, description, path, image, body, crumb = false, type = '
   const fullTitle = path === '/' ? cfg.title : `${title} · ${cfg.title}`;
   const fallbackImg = existsSync('assets/card.png') ? `${cfg.url}/assets/card.png` : '';
   const img = image ? (image.startsWith('http') ? image : cfg.url + image) : fallbackImg;
-  const nav = cfg.nav.filter((n) => !hiddenPaths.has(n.href.replace(/\/$/, ''))).map((n) => `<a href="${esc(n.href)}">${esc(n.label)}</a>`).join(' ');
+  const menuItems = [
+    { label: L.writing, href: '/writing' },
+    { label: L.topics, href: '/topics' },
+    ...cfg.nav,
+    ...(pages.some((pg) => pg.slug === 'subscribe') && !cfg.nav.some((n) => n.href === '/subscribe') ? [{ label: 'Subscribe', href: '/subscribe' }] : []),
+  ].filter((n) => !hiddenPaths.has(n.href.replace(/\/$/, '')));
+  const here = path.replace(/\/$/, '') || '/';
+  const nav = menuItems.map((n) => {
+    const h = n.href.replace(/\/$/, '');
+    const on = h === here || (h !== '/' && here.startsWith(h + '/'));
+    return `<a href="${esc(n.href)}"${on ? ' aria-current="page"' : ''}>${esc(n.label)}</a>`;
+  }).join('');
   return `<!doctype html>
 <html lang="${esc(cfg.lang)}" data-theme="mono">
 <head>
@@ -181,7 +192,7 @@ ${img ? `<meta property="og:image" content="${esc(img)}">\n<meta name="twitter:c
 <div class="wrap">
 <header class="site">
   <nav class="crumbs"><a class="brand" href="/">${esc(cfg.title)}</a>${crumb ? ` <span class="sep">/</span> <a href="/">${esc(L.writing)}</a>` : ''}</nav>
-  <nav class="links">${nav}<button class="theme-toggle" type="button" role="switch" aria-checked="false" data-mono="${esc(L.themeToMono)}" data-color="${esc(L.themeToColor)}" aria-label="${esc(L.themeSwitch)}" title="${esc(L.themeToColor)}"><span class="knob" aria-hidden="true"></span></button></nav>
+  <nav class="links"><details class="menu"><summary>${esc(L.menu || 'Menu')}</summary><div class="panel">${nav}<div class="row"><span>${esc(L.theme || 'Theme')}</span><button class="theme-toggle" type="button" role="switch" aria-checked="false" data-mono="${esc(L.themeToMono)}" data-color="${esc(L.themeToColor)}" aria-label="${esc(L.themeSwitch)}" title="${esc(L.themeToColor)}"><span class="knob" aria-hidden="true"></span></button></div></div></details></nav>
 </header>
 <main>
 ${body}
@@ -190,6 +201,11 @@ ${subscribeBlock()}
 <footer class="site">${cfg.footerLinks.map(extLink).join(' ')}</footer>
 </div>
 <script>
+(function(){
+  var d=document.querySelector('details.menu');if(!d)return;
+  document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))d.open=false;});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){d.open=false;d.querySelector('summary').focus();}});
+})();
 (function(){
   var b=document.querySelector('.theme-toggle');if(!b)return;
   var root=document.documentElement;

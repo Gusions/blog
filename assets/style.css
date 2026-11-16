@@ -250,3 +250,21 @@ header.site { flex-wrap: wrap; row-gap: 0.5rem; }
 header.site .links a + a::before { content: ""; display: inline-block; width: 1px; height: 0.9em; background: var(--line); margin-right: 1rem; vertical-align: -0.1em; }
 html[data-theme="mono"] header.site .links a + a::before { background: #d6d6d6; }
 @media (max-width: 420px) { header.site .links a + a::before { margin-right: 0.75rem; } }
+
+/* menu: one "Menu" button, links + theme switch in a dropdown panel */
+header.site { position: relative; }
+header.site .links a + a::before { content: none; }
+details.menu { position: relative; }
+details.menu > summary { list-style: none; cursor: pointer; color: var(--muted); user-select: none; -webkit-user-select: none; }
+details.menu > summary::-webkit-details-marker { display: none; }
+details.menu[open] > summary, details.menu > summary:hover { color: var(--fg); }
+details.menu > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+details.menu .panel { position: absolute; right: 0; top: calc(100% + 0.75rem); z-index: 20; min-width: 12rem; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 0.5rem; box-shadow: 0 8px 24px rgba(0,0,0,.08); display: flex; flex-direction: column; }
+header.site details.menu .panel a { color: var(--fg); padding: 0.45rem 0.65rem; border-radius: 6px; text-decoration: none; }
+header.site details.menu .panel a:hover { background: color-mix(in srgb, var(--fg) 6%, transparent); }
+header.site details.menu .panel a[aria-current="page"] { font-weight: 600; }
+details.menu .panel .row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0.55rem 0.65rem 0.35rem; margin-top: 0.35rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.875em; }
+@media (max-width: 520px) {
+  details.menu { position: static; }
+  details.menu .panel { left: 0; right: 0; min-width: 0; }
+}
