@@ -1,5 +1,5 @@
 ---
-title: Print the few
+title: Print the few you love
 date: 16/11/2026
 topics: [thoughts]
 description: A camera roll keeps every photo. A wall keeps the ones that matter.
