@@ -23,10 +23,4 @@ It also leaves your notes alone. Point it at a folder of people and it reads, it
 
 It follows file over app. Delete the plugin and you lose the views. You keep the people.
 
-## Try it
-
-Kith is free and open source. Install it with BRAT from `Gusions/obsidian-kith`, or copy `main.js`, `manifest.json` and `styles.css` into `.obsidian/plugins/kith/`. You need Obsidian 1.10 or later, and I've tested it on desktop and mobile.
-
-It's small and early. If it breaks, tell me.
-
 A contact is a note. Kith just helps you read it.
