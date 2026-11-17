@@ -30,6 +30,6 @@ description: Where I have worked.
 <li id="wavemaker"><span class="when">2017—2018</span><strong>Wavemaker</strong><span class="what">Content specialist. Social media for Sky, plus Nivea and American Tourister.</span></li>
 <li id="instagramers"><span class="when">2015—2018</span><strong>Instagramers</strong><span class="what">Editorial content lead. For the main community of Instagram fans.</span></li>
 <li id="freelance"><span class="when">2013—2021</span><strong>Freelance</strong><span class="what">Creative and social media strategist, and content creator. On my own, next to everything else.</span></li>
-<li id="triboo"><span class="when">2013—2018</span><strong>Triboo Digitale</strong><span class="what">Senior content writer.</span></li>
-<li id="htmlit"><span class="when">2010—2021</span><strong>html.it</strong><span class="what">Tech blogger. Writing for what was then the biggest tech site in Italy.</span></li>
+<li id="triboo"><span class="when">2013—2018</span><strong>Triboo Digitale</strong><span class="what">Senior content writer. Wrote about mobile, smartphones, gadgets and GNU/Linux.</span></li>
+<li id="htmlit"><span class="when">2010—2021</span><strong>html.it</strong><span class="what">Tech blogger. Wrote about GNU/Linux, operating systems and programming for what was then the biggest tech site in Italy.</span></li>
 </ul>
