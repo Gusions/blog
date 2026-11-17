@@ -4,7 +4,7 @@ description: Where I have worked.
 ---
 
 <div class="timeline">
-<a class="tl-row" href="#lexroom" title="Lexroom, Jan 2025 – 2026"><span class="tl-name">Lexroom</span><span class="tl-track"><span class="tl-bar" style="left:88.02%;width:10.42%"></span></span><span class="tl-dates">Jan 2025 – 2026</span></a>
+<a class="tl-row" href="#lexroom" title="Lexroom, Jan 2025 – Oct 2026"><span class="tl-name">Lexroom</span><span class="tl-track"><span class="tl-bar" style="left:88.02%;width:10.94%"></span></span><span class="tl-dates">Jan 2025 – Oct 2026</span></a>
 <a class="tl-row" href="#cosmico" title="Cosmico, Sep 2024 – Dec 2025"><span class="tl-name">Cosmico</span><span class="tl-track"><span class="tl-bar" style="left:85.94%;width:7.81%"></span></span><span class="tl-dates">Sep 2024 – Dec 2025</span></a>
 <a class="tl-row" href="#bowlpros" title="Bowlpros, Dec 2023 – Sep 2024"><span class="tl-name">Bowlpros</span><span class="tl-track"><span class="tl-bar" style="left:81.25%;width:4.69%"></span></span><span class="tl-dates">Dec 2023 – Sep 2024</span></a>
 <a class="tl-row" href="#gility" title="Gility, May 2023 – Dec 2023"><span class="tl-name">Gility</span><span class="tl-track"><span class="tl-bar" style="left:77.60%;width:3.65%"></span></span><span class="tl-dates">May 2023 – Dec 2023</span></a>
