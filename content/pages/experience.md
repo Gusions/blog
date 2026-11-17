@@ -19,6 +19,8 @@ description: Where I have worked.
 <div class="tl-axis"><span class="tl-name"></span><span class="tl-track"><i style="left:0.52%"></i><i style="left:6.77%"></i><i style="left:13.02%"></i><i style="left:19.27%"></i><i style="left:25.52%"></i><i style="left:31.77%"></i><i style="left:38.02%"></i><i style="left:44.27%"></i><i style="left:50.52%"></i><i style="left:56.77%"></i><i style="left:63.02%"></i><i style="left:69.27%"></i><i style="left:75.52%"></i><i style="left:81.77%"></i><i style="left:88.02%"></i><i style="left:94.27%"></i><span style="left:0.52%">2011</span><span style="left:19.27%">2014</span><span style="left:38.02%">2017</span><span style="left:56.77%">2020</span><span style="left:75.52%">2023</span><span style="left:94.27%">2026</span></span><span class="tl-dates"></span></div>
 </div>
 
+---
+
 <ul class="experience">
 <li id="lexroom"><span class="when">2025—2026</span><strong>Lexroom</strong><span class="what">Senior marketing manager. First marketing hire at Italy&#x27;s most funded legal-tech startup. Scaled from €500K to €25M ARR. Built the function and a team of ten from scratch. Head of marketing in all but title.</span></li>
 <li id="cosmico"><span class="when">2024—2025</span><strong>Cosmico</strong><span class="what">Freelance strategist and copywriter. Through Cosmico, for Caffeina and two of its clients: Hera on communication, Hoopygang on influencer marketing.</span></li>

@@ -217,7 +217,7 @@ footer.site a:hover { color: var(--fg); text-decoration: underline; }
 }
 
 /* experience page: timeline + list */
-.timeline { margin: 2em 0 3em; font-size: 0.8em; }
+.timeline { margin: 3.5em 0 0; font-size: 0.8em; }
 .timeline .tl-row, .timeline .tl-axis { display: grid; grid-template-columns: 7.5em 1fr 9.5em; align-items: center; gap: 0.75em; }
 html .content .timeline a.tl-row, html[data-theme="mono"] .content .timeline a.tl-row { text-decoration: none; color: var(--fg); padding: 0.18em 0; }
 .timeline .tl-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--muted); }
@@ -288,3 +288,4 @@ html[data-theme="mono"] header.site .links .divider { background: #d6d6d6; }
 .content hr { border: 0; height: 1px; margin: 4.27em 0; text-align: center; overflow: visible; }
 .content hr::before { content: "•••"; display: inline-block; position: relative; top: -0.75em; font-size: 0.92em; letter-spacing: 1.25em; padding-left: 1.25em; color: color-mix(in srgb, var(--muted) 55%, var(--bg)); }
 html[data-theme="mono"] .content hr { border-top: 0; }
+.content > .timeline:first-child { margin-top: 3.5em; }
