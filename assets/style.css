@@ -272,3 +272,8 @@ details.menu .panel .row { display: flex; justify-content: space-between; align-
 header.site .links { align-items: center; }
 header.site .links .divider { width: 1px; height: 0.9em; background: var(--line); }
 html[data-theme="mono"] header.site .links .divider { background: #d6d6d6; }
+
+/* home: Latest block rhythm (label, title+meta, description, link) */
+.latest-block h2.label { font-size: 0.875em; margin: 0 0 0.75em; }
+.latest .meta { margin: 0.2em 0 0.75em; }
+.latest em { display: block; margin-top: 0.6em; }
