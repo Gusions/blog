@@ -7,7 +7,7 @@ I'm Marco also known as Gusions. This is where I write down thoughts and experie
 
 ---
 
-## Elsewhere
+## Find me online
 
 You can [follow this site](/subscribe), or find me here:
 
