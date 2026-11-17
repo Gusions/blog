@@ -277,3 +277,9 @@ html[data-theme="mono"] header.site .links .divider { background: #d6d6d6; }
 .latest-block h2.label { font-size: 0.875em; margin: 0 0 0.75em; }
 .latest .meta { margin: 0.2em 0 0.75em; }
 .latest em { display: block; margin-top: 0.6em; }
+
+/* text rhythm inside pages and posts: headings, paragraphs, lists */
+.content h2 { margin: 2em 0 0.9em; }
+.content > h2:first-child { margin-top: 0; }
+.content ul, .content ol { padding-left: 1em; }
+.content li { margin: 0; }
