@@ -155,10 +155,7 @@ function layout({ title, description, path, image, body, crumb = false, type = '
   const fallbackImg = existsSync('assets/card.png') ? `${cfg.url}/assets/card.png` : '';
   const img = image ? (image.startsWith('http') ? image : cfg.url + image) : fallbackImg;
   const menuItems = [
-    { label: L.writing, href: '/writing' },
-    { label: L.topics, href: '/topics' },
     ...cfg.nav,
-    ...(pages.some((pg) => pg.slug === 'subscribe') && !cfg.nav.some((n) => n.href === '/subscribe') ? [{ label: 'Subscribe', href: '/subscribe' }] : []),
   ].filter((n) => !hiddenPaths.has(n.href.replace(/\/$/, '')));
   const here = path.replace(/\/$/, '') || '/';
   const nav = menuItems.map((n) => {
