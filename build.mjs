@@ -192,7 +192,7 @@ ${img ? `<meta property="og:image" content="${esc(img)}">\n<meta name="twitter:c
 <div class="wrap">
 <header class="site">
   <nav class="crumbs"><a class="brand" href="/">${esc(cfg.title)}</a>${crumb ? ` <span class="sep">/</span> <a href="/">${esc(L.writing)}</a>` : ''}</nav>
-  <nav class="links"><details class="menu"><summary>${esc(L.menu || 'Menu')}</summary><div class="panel">${nav}<div class="row"><span>${esc(L.theme || 'Theme')}</span><button class="theme-toggle" type="button" role="switch" aria-checked="false" data-mono="${esc(L.themeToMono)}" data-color="${esc(L.themeToColor)}" aria-label="${esc(L.themeSwitch)}" title="${esc(L.themeToColor)}"><span class="knob" aria-hidden="true"></span></button></div></div></details></nav>
+  <nav class="links"><details class="menu"><summary>${esc(L.menu || 'Menu')}</summary><div class="panel">${nav}</div></details><span class="divider" aria-hidden="true"></span><button class="theme-toggle" type="button" role="switch" aria-checked="false" data-mono="${esc(L.themeToMono)}" data-color="${esc(L.themeToColor)}" aria-label="${esc(L.themeSwitch)}" title="${esc(L.themeToColor)}"><span class="knob" aria-hidden="true"></span></button></nav>
 </header>
 <main>
 ${body}

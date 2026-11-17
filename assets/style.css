@@ -268,3 +268,7 @@ details.menu .panel .row { display: flex; justify-content: space-between; align-
   details.menu { position: static; }
   details.menu .panel { left: 0; right: 0; min-width: 0; }
 }
+
+header.site .links { align-items: center; }
+header.site .links .divider { width: 1px; height: 0.9em; background: var(--line); }
+html[data-theme="mono"] header.site .links .divider { background: #d6d6d6; }
