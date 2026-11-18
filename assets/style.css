@@ -290,4 +290,13 @@ html[data-theme="mono"] header.site .links .divider { background: #d6d6d6; }
 html[data-theme="mono"] .content hr { border-top: 0; }
 .content > .timeline:first-child { margin-top: 3.5em; }
 
-ul.experience a.name { font-weight: 600; }
+
+/* projects page: year column + name and one muted line, thin rule under each row */
+.content ul.projects { list-style: none; padding: 10px 0 0; margin: 0; }
+.content ul.projects li { display: flex; align-items: baseline; padding: 10px 0; margin: 0; border-bottom: 1px solid var(--line); }
+ul.projects .when { min-width: 7em; flex-shrink: 0; color: var(--muted); font-size: 0.875em; font-variant-numeric: tabular-nums; }
+ul.projects .body { display: block; }
+html .content ul.projects a.name { color: var(--fg); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 0.15em; }
+html .content ul.projects a.name:hover { text-decoration-color: currentColor; }
+ul.projects .what { display: block; color: var(--muted); font-size: 0.875em; line-height: 1.3; }
+@media (max-width: 480px) { ul.projects .when { min-width: 5em; } }
