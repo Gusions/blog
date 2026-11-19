@@ -1,10 +1,10 @@
 ---
 title: Launchpad
-description: A start page for Obsidian that opens all of the above.
+description: A start page for Obsidian that opens your plugins.
 ---
 
-When Obsidian opens, Launchpad shows my apps as icons: Kith, Crate, Parley, Tally and Quill. Pick one, or carry on with plain notes.
+When Obsidian opens, Launchpad shows your plugins as app icons. Pick one, or carry on with plain notes.
 
-It works with the keyboard and on the phone.
+It works with the keyboard and on mobile.
 
-Personal project, not published.
+> **Private repository.** The code is not public yet. If you would like to try it, [get in touch](/about).

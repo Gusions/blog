@@ -1,11 +1,11 @@
 ---
 title: Crate
-description: My vinyl collection, browsable in Obsidian.
+description: Your vinyl collection, browsable in Obsidian.
 ---
 
-Each record is a note. Crate turns those notes into a collection you can browse by artist, genre, label, decade or the shelf where the record lives.
+Crate turns record notes into a collection you can browse. Filter by artist, genre, label, decade or the shelf where a record is stored.
 
-It finds the covers on its own, and it follows Obsidian's theme and language (English or Italian).
+It finds cover art on its own, and it follows Obsidian's theme and language (English or Italian).
 
 ## Get it
 

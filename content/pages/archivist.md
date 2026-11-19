@@ -1,13 +1,13 @@
 ---
 title: Archivist
-description: Incremental, lossless backups for an Obsidian vault.
+description: Incremental, lossless backups for your Obsidian vault.
 ---
 
-My vault keeps growing. Archivist is a small Mac app that backs it up: it saves only what changed since the last run and compresses without losing anything. Restoring gives you back exactly the files you had.
+Archivist is a small Mac app that backs up an Obsidian vault. Each run saves only what changed since the last one, and compresses without losing anything. Restoring gives you back exactly the files you had.
 
-Archives can be encrypted, so a copy on an external drive or in the cloud stays yours.
+Archives can be encrypted, so a copy on an external drive or in the cloud stays private.
 
-It has its own window, not a browser tab. The interface follows the system's light or dark theme and can be translated.
+It runs in its own window, follows the system's light or dark theme, and the interface can be translated.
 
 ## Get it
 

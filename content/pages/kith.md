@@ -3,11 +3,11 @@ title: Kith
 description: A personal CRM made of Markdown notes.
 ---
 
-Every person is a note. Kith reads those notes and shows them as a table, cards, a kanban board or a graph. Open a person and you see their notes and a timeline. Open a company and you see who works there.
+Kith turns a folder of people notes into a CRM inside Obsidian. Every person is a note. Kith shows them as a table, cards, a kanban board or a graph. Open a person to see their notes and a timeline. Open a company to see who works there.
 
-It imports contacts from LinkedIn, vCard and Google exports, and matches the same person across sources. It reminds you of birthdays and of people you haven't talked to in a while.
+You can import contacts from LinkedIn, vCard and Google exports, and Kith matches the same person across sources. It reminds you of birthdays and of people you haven't talked to in a while.
 
-The notes stay plain files. Delete the plugin and you lose the views, not the people. I wrote about it in [[your-contacts-are-just-notes|Your contacts are just notes]].
+Your notes stay plain files. Remove the plugin and you lose the views, not the people. The idea behind it is in [[your-contacts-are-just-notes|Your contacts are just notes]].
 
 ## Get it
 

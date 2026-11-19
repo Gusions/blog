@@ -1,10 +1,8 @@
 ---
 title: Tally
-description: A money dashboard on top of my own spreadsheet.
+description: A money dashboard for Obsidian, on top of your own spreadsheet.
 ---
 
-I track my money in a spreadsheet. Tally reads it, privately, and shows it as a dashboard inside Obsidian, on the computer and on the phone.
+Tally reads a personal finance spreadsheet and shows it as a dashboard inside Obsidian, on desktop and on mobile. It connects to the sheet privately, so the data stays in your own accounts.
 
-Obsidian is where everything else of mine lives, so my numbers should live there too.
-
-Private project. The data never leaves my accounts.
+> **Private repository.** The code is not public yet. If you would like to try it, [get in touch](/about).
