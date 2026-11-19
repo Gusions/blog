@@ -3,15 +3,22 @@ title: Archivist
 description: Incremental, lossless backups for your Obsidian vault.
 ---
 
-Archivist is a small Mac app that backs up an Obsidian vault. Each run saves only what changed since the last one, and compresses without losing anything. Restoring gives you back exactly the files you had.
+An Obsidian vault is just a folder, and folders get big. Notes are small, but images, PDFs and attachments add up, and a plain copy of the whole thing every time wastes space and time. Archivist is a small desktop app that backs up a vault properly.
 
-Archives can be encrypted, so a copy on an external drive or in the cloud stays private.
+## What it does
 
-It runs in its own window, follows the system's light or dark theme, and the interface can be translated.
+- **Incremental backups.** The first backup stores everything. After that, each run saves only the files that changed, so backups are quick even on a large vault.
+- **Lossless compression.** Files are compressed without any loss of quality. Text compresses well; images and PDFs are usually compressed already, so expect smaller gains there.
+- **Exact restore.** Restoring gives you back the same files, byte for byte, in the same structure.
+- **Encryption.** Archives can be encrypted, so a copy on an external drive or in the cloud stays private.
+
+## How it feels
+
+Archivist runs in its own native window, not in a browser tab. It follows the system's light or dark theme, keeps its settings out of the way, and the interface can be translated. You pick the vault, pick where backups go, and press one button.
 
 ## Get it
 
-- Site and docs: [archivist.gusions.com](https://archivist.gusions.com)
+- Site and documentation: [archivist.gusions.com](https://archivist.gusions.com)
 - Code and releases: [GitHub](https://github.com/Gusions/archivist)
 
-Open source under the MIT license.
+Built for macOS. Open source under the MIT license.
