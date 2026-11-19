@@ -1,19 +1,28 @@
 ---
 title: Tally
-description: A money dashboard for Obsidian, on top of your own spreadsheet.
+description: A personal finance dashboard for Obsidian, built on top of the spreadsheet you already keep.
 ---
 
-If you already track your money in a spreadsheet, you don't need another finance app. Tally reads that spreadsheet and turns it into a dashboard inside Obsidian.
+Many people who are serious about their money already track it in a spreadsheet: every expense, every source of income, investments, net worth. The spreadsheet is the truth, but it is not a pleasant place to look at your finances, and it lives far from the rest of your notes. Tally reads that spreadsheet and turns it into a dashboard inside Obsidian, without moving your data anywhere else.
 
-## What it does
+## What you see
 
-- **Dashboard.** Spending, income, net worth, investments and recurring payments, with charts and key numbers.
-- **Filters.** Every view has its own filters, so you can narrow it down to what you need.
-- **Privacy mode.** Blur all amounts with one click, useful when someone is looking at your screen.
-- **Your look.** Choose theme, colour palette, density and which tabs and cards to show.
+- **Overview.** The key numbers at a glance: what came in, what went out and how your net worth is moving.
+- **Spending.** Where the money goes, by category and over time.
+- **Income.** Every source of income over time, with totals.
+- **Net worth and investments.** Assets, accounts and portfolio in one place, and how they change month after month.
+- **Payments.** Recurring payments in their own view.
 
-## How it works
+Every view has its own filters, so you can narrow it down to a period or a category without losing the rest of the dashboard.
 
-Tally connects to a Google Sheet through your own Google account, so the sheet stays private and the data never passes through anyone else. It can also read a local spreadsheet file. It works on desktop and mobile.
+## Privacy first
+
+Tally connects to a Google Sheet through your own Google account and your own credentials, with read-only access. The sheet stays private, and the data never passes through a server that isn't yours. It can also read a local spreadsheet file instead.
+
+A **blur** button hides every amount with one click, for the moments when someone else can see your screen.
+
+## Your dashboard, your way
+
+Choose the theme, the colour palette and the density. Hide the tabs, cards and figures you don't need. It works on desktop and on mobile, with a layout designed for the phone rather than squeezed onto it.
 
 > **Private repository.** The code is not public yet. If you would like to try it, [get in touch](/about).
