@@ -24,4 +24,6 @@ All posts and pages in one table, with title, description, topics, date and stat
 
 Quill talks to GitHub with a personal access token, ideally limited to your blog's repository. The token stays in the plugin's settings on your device.
 
+Requires Obsidian 1.10 or later.
+
 > **Private repository.** The code is not public yet. If you would like to try it, [get in touch](/about).

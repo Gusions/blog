@@ -18,4 +18,6 @@ Launchpad looks like the app launcher on a Mac: large icons, generous space and 
 
 It doesn't change how your plugins work or where your notes live. It is only a door.
 
+Requires Obsidian 1.10 or later.
+
 > **Private repository.** The code is not public yet. If you would like to try it, [get in touch](/about).

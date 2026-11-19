@@ -28,4 +28,6 @@ What you spent, by category, brand, shop and year; which colours and seasons dom
 
 Each garment stays a plain note with its details in the front matter and its photos as attachments. Rack generates light thumbnails so the grid stays fast, on desktop and on mobile. Remove the plugin and your notes are exactly as they were.
 
+Requires Obsidian 1.10 or later.
+
 > **Private repository.** The code is not public yet. If you would like to try it, [get in touch](/about).

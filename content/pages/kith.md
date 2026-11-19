@@ -47,6 +47,6 @@ Rename, hide or add fields. Change colours, fonts, density and corner radius, or
 - With [BRAT](https://github.com/TfTHacker/obsidian42-brat): add `Gusions/obsidian-kith`.
 - Manually: copy `main.js`, `manifest.json` and `styles.css` from the latest release into `.obsidian/plugins/kith/`.
 
-Requires Obsidian 1.5 or later. Developed on desktop; mobile works but is less tested. Open source under the GPL-3.0 license.
+Requires Obsidian 1.10 or later. Developed on desktop; mobile works but is less tested. Open source under the GPL-3.0 license.
 
 Kith runs locally. The only network requests are the ones you trigger: company enrichment from Wikidata (can be turned off) and opening Google Calendar in your browser.

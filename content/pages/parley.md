@@ -36,4 +36,4 @@ The interface follows your Obsidian theme and language, in English or Italian.
 - With [BRAT](https://github.com/TfTHacker/obsidian42-brat): add `Gusions/obsidian-parley`.
 - Manually: unzip the latest release into `.obsidian/plugins/parley/`.
 
-Works on desktop with Obsidian 1.0 or later. Mobile is experimental: you can open a single zip or text file, but folders and libraries are desktop only. Open source under the MIT license.
+Requires Obsidian 1.10 or later. Mobile is experimental: you can open a single zip or text file, but folders and libraries are desktop only. Open source under the MIT license.

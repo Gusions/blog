@@ -28,4 +28,6 @@ Each place is a note with its city, type and coordinates. Atlas can look up the 
 
 A trip is a folder with a few plain notes: overview, itinerary, logistics, budget and attachments. You can read and edit them like any other note; Atlas is the view on top. It works on desktop and mobile, with a quiet, text-first design and a coloured cover for each trip.
 
+Requires Obsidian 1.10 or later.
+
 > **Private repository.** The code is not public yet. If you would like to try it, [get in touch](/about).

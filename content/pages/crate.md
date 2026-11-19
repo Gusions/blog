@@ -32,4 +32,4 @@ Crate follows your Obsidian theme and accent colour, or uses one you pick. The i
 - With [BRAT](https://github.com/TfTHacker/obsidian42-brat): add `Gusions/obsidian-crate`.
 - Manually: copy `main.js`, `manifest.json` and `styles.css` from the latest release into `.obsidian/plugins/crate/`.
 
-Open source under the GPL-3.0 license. The only network requests are Apple's public search for covers (can be turned off), Discogs if you add a token, and the cover images themselves.
+Requires Obsidian 1.10 or later. Open source under the GPL-3.0 license. The only network requests are Apple's public search for covers (can be turned off), Discogs if you add a token, and the cover images themselves.

@@ -25,4 +25,6 @@ A **blur** button hides every amount with one click, for the moments when someon
 
 Choose the theme, the colour palette and the density. Hide the tabs, cards and figures you don't need. It works on desktop and on mobile, with a layout designed for the phone rather than squeezed onto it.
 
+Requires Obsidian 1.10 or later.
+
 > **Private repository.** The code is not public yet. If you would like to try it, [get in touch](/about).
